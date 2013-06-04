@@ -20,7 +20,7 @@ STORE-2 and Store-3: Store -2 opens a udp connection and wait to receives the tr
 
 STORE-4 The store-4 receives the updated truck vector from store 3 at udp port mentioned in the project specification. It then computes the value of its outlet vector and sends the updated truck vector to store-1.After receiving the truck vector for the second time from store3 it sends the computed truck vector to central warehouse which has a open udp connection for receiving the truck vector.
 
-INSTRUCTIONS FOR THE User:
+INSTRUCTIONS FOR THE USER:
 Please compile the 5 files namely warehouse.c,store1.c,store2.c,store3.c and store4.c using cc or gcc and  the command:
 cc -o filename filename.c -lnsl -lsocket –lresolv
 
