@@ -1,7 +1,7 @@
 Networks_FunWithProtocols
 =========================
 
-This is abrief Description for the project.
+This is a brief Description for the project.
 
 PROJECT DESCRIPTION:
 In this project I simulated a logistics system. The system consists of a set of Outlet stores and one central warehouse. The central warehouse manages the needs for each outlet store and makes sure that the requirements for each outlet store is satisfied. Each outlet store reports its own inventory to the central warehouse. Based on the collected information, the central-warehouse computes the excess supply or shortage of each good. The warehouse then dispatches a truck to visit the stores successively to collect the excessive goods or replenish any shortages. All communications take place over TCP and UDP sockets in client-server architecture. The project has 2 major phases: inventory reporting, stock replenishment.
