@@ -12,9 +12,9 @@ IMPLEMENTATION DETAILS
 
 FILES
 -----
+
 warehouse.c
 -------------
-
  this file contains the code for the central warehouse. Initially the central warehouse creates a tcp socket and binds it to the host address and port number 21532 as specified in the project description. The hostname is hardcoded as host=”nunki.usc.edu” and all the static ports are also hardcoded. The central warehouse then listens (wait) for any communication at the tcp port. For each new incoming connection it creates child sockets that are associated with the single parent socket. After it has received all the outlet vectors sent by store-1, store-2, store-3 and store-4, it computes their sum and then creates a truck vector, which contains the supplies that are needed for the stores and this vector is called the truck vector. The truck vector is then send to the store-1 using a udp connection which requires the port number of store-1, which has also been hardcoded. The udp chooses the port dynamically but for the project I have binded the udp socket to port 31532 as it was required. Finally, the warehouse opens another udp connection at port 32532 by binding a udp socket to this port and waits for a incoming udp connection from store-4 which will contain the final updated truck vector.
 
 
